@@ -1,0 +1,14 @@
+
+
+.about_container{
+   background-color: crimson;
+    width:100%;
+    margin: 0;
+    padding:20px;
+    text-align: center;
+    font-weight: bold;
+}
+.about_container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
