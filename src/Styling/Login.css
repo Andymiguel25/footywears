@@ -1,0 +1,116 @@
+
+
+.container1{
+    /* display: flex; */
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: crimson; */
+    background-image:url(../assets/Feetimage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 30px;
+    height: 600px;
+    width: 60%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+}
+/*  header (signup/login) styling */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.text1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: crimson;
+}
+.underline{
+    width: 70px;
+    height: 7px;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+/* input styling */
+.inputcontainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background-color:honeydew;
+    border-radius: 6px;
+}
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: crimson;
+
+}
+/* username, email,password  */
+.details{
+    padding-left: 4px;
+}
+input::placeholder{
+    padding:15px;
+    
+}
+.forgotpassword{
+    padding-left: 20px;
+    margin-top: 20px;
+    color: crimson;
+    font-weight: bold;
+
+}
+.forgotpassword span{
+    cursor: pointer;
+}
+.forgotpassword span:hover{
+    color: honeydew;
+}
+/* sign up and login styling */
+.submitcontainer{
+    display: flex;
+    gap: 30px;
+   align-items: center;
+   /* flex-direction: column; */
+   margin-left: 200px;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    color: honeydew;
+    background-color: crimson;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+}
+
+.gray {
+    color: crimson;
+    background: honeydew;
+}

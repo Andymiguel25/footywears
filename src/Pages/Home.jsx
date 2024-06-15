@@ -1,14 +1,18 @@
 import React from 'react'
 import Nav from '../Component/Nav'
-import About from './About'
-import Contact from './Contact'
+import { Outlet } from 'react-router-dom'
+import Hero from '../Component/Hero'
 
 const Home = () => {
   return (
    
 
     <div> 
-    <Nav/>
+    {/* <Nav/> */}
+    <Outlet/>
+    <Hero/>
+    
+
     </div>
   )
 }

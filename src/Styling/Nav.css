@@ -1,30 +1,85 @@
 body{
     margin: 0;
+    box-sizing: border-box;
 }
+/* active shows an option thats clicked */
+.active{
+  color:#c6d2e0;
+}
+/* nav styling */
 nav{
     background-color: crimson;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     cursor: pointer;
     position:sticky;
     top: 0;
+    padding: 0 30px;
+
    
+}
+nav .title{
+    font-size: 1.5rem;
+    color: #c6d2e0;
 }
 ul li{
     list-style: none;
     display: inline-block;
     margin: 20px;
-    transition: ease-out 0.1s;
-}
-ul li:hover{
-    font-size: large;
-    font-weight: bolder;
-    color: honeydew;
-    transition: ease-in 0.3s;
+    font-weight: bold;
+    font-size: 20px;
 }
 a{
     text-decoration: none;
     color: black;
+}
+/* nav menu styling */
+nav .menu{
+    display: none;
+    width:2.2rem ;
+    height: 2rem;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media (max-width:480px) {
+    nav .menu{
+        display: flex;
+    }
+   nav{
+     flex-direction: column;
+     align-items: start;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+       
+    }
+    nav ul li a{
+         margin: 0.2rem 0.5rem;
+    }
+
+    /* this takes effect with the condition */
+    nav ul.open{
+        display: flex;
+    }
+
 }

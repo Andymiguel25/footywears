@@ -1,7 +1,6 @@
 
-
 .about_container{
-   background-color: crimson;
+   background-color: honeydew;
     width:100%;
     margin: 0;
     padding:20px;
@@ -11,4 +10,18 @@
 .about_container h1{
     font-size: 50px;
     margin-bottom: 20px;
+}
+.aboutH1{
+    color: crimson;
+}
+.mission{
+    color: crimson;
+}
+.img2{
+    height: 400px;
+    width: 370px;
+    object-fit: cover;
+    border-radius: 30px;
+    overflow-x: hidden;
+   
 }
